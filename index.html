@@ -1,33 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Password Generator</h1>
-      </header>
-      <div class="card">
-        <div class="card-header">
-          <h2>Generate a Password</h2>
-        </div>
-        <div class="card-body">
-          <textarea 
-          aria-readonly="false"
-          id="password"
-          ></textarea>
-        </div>
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
-          <button id="copyTxt" class="copyText">Copy to Clipboard</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Generator</title>
+  <style>
+    textarea {
+      width: 200px;
+      min-width: auto;
+      max-width: auto;
+
+      height: 200px;
+      min-height: 100px;
+      max-height: 100px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="text-center">
+      <h1>Password Generator</h1>
+    </header>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card text-center">
+          <div class="card-header">
+            <h2>Generate a Password</h2>
+          </div>
+          <div class="card-body">
+            <textarea class="form-control rounded-4 text-center" id="password" rows="3" readonly>your password</textarea>
+          </div>
+          <div class="card-footer">
+            <div class="form-group">
+              <label for="passWordLength">Enter Password Length</label>
+              <input type="text" class="form-control" id="passWordLength" value="8">
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label" for="check1">
+                <input type="checkbox" class="form-check-input" id="lowerCase" checked>Lower Case
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label" for="check2">
+                <input type="checkbox" class="form-check-input" id="upperCase">Upper Case
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" id="numbers">Numbers
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" id="specialChars">Special Characters
+              </label>
+            </div>
+            <br><br>
+            <button id="generate" class="btn btn-danger btn-lg">Generate Password</button>
+            <button id="copyTxt" class="btn btn-success btn-lg">Copy to Clipboard</button>
+          </div>
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
