@@ -28,13 +28,13 @@
     <div class="row justify-content-center">
       <div class="col-md-6">
         <div class="card text-center">
-          <div class="card-header">
+          <div class="card-header bg-primary text-white">
             <h2>Generate a Password</h2>
           </div>
           <div class="card-body">
             <textarea class="form-control rounded-4 text-center" id="password" rows="3" readonly>your password</textarea>
           </div>
-          <div class="card-footer">
+          <div class="card-footer bg-primary text-white">
             <div class="form-group">
               <label for="passWordLength">Enter Password Length</label>
               <input type="text" class="form-control" id="passWordLength" value="8">
@@ -59,8 +59,14 @@
               </label>
             </div>
             <br><br>
-            <button id="generate" class="btn btn-danger btn-lg">Generate Password</button>
-            <button id="copyTxt" class="btn btn-success btn-lg">Copy to Clipboard</button>
+            <div class="form-group row">
+              <div class="col-md-6">
+                <button id="generate" class="btn btn-danger btn-lg">Generate Password</button>
+              </div>
+              <div class="col-md-6">
+                <button id="copyTxt" class="btn btn-success btn-lg">Copy to Clipboard</button>
+              </div>
+          </div>
           </div>
         </div>
       </div>
