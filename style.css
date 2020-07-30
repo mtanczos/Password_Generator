@@ -1,4 +1,4 @@
-
+/*this style is to disable user from resizing the password box */
    textarea {
     width: 200px;
     min-width: auto;
