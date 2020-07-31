@@ -12,7 +12,7 @@ The code will then generate a password if the length enter in between 8 and 128 
 * [Features](#Acknowledgments)
 
 ## Screenshots
-![Password Generator screenshot](Screenshots/screenshot1.jpg)
+![Password Generator screenshot](./Screenshots/screenshot1.jpg)
 
 ## Technologies
 * Bootstrap 4.5
