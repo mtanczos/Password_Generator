@@ -5,6 +5,8 @@ The project uses a validated textbox so users can enter in the length of the pas
 Users can also select if they want to use lower, upper, numbers, and/or special characters.
 The code will then generate a password if the length enter in between 8 and 128 chars, and one checkbox must checked, other wise the code will stop
 
+#https://mtanczos.github.io/Password_Generator/
+
 ## Table of contents
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
